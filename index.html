@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curso IA – Impulsiva Escuela</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--p:#8e5af9;--pd:#693ddd;--s:#ff735c;--bg:#fff6f3;--t:#1a1a1a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--t);line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-weight:700}
+a{text-decoration:none;color:inherit}
+.section{max-width:1120px;margin:auto;padding:4rem 1rem}
+.btn{background:var(--s);color:#fff;padding:.9rem 2.2rem;border-radius:10px;font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,.15);display:inline-block;transition:transform .25s;margin:auto}
+.btn:hover{transform:translateY(-3px)}
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--p),var(--pd));color:#fff;text-align:center;padding:7rem 1rem 10rem}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.2;margin-bottom:1.25rem}
+.highlight{background:linear-gradient(90deg,#ffe55c,#ff735c);-webkit-background-clip:text;color:transparent;animation:h 6s infinite alternate}
+@keyframes h{to{filter:hue-rotate(360deg)}}
+.badge{display:inline-block;background:var(--s);padding:.3rem 1rem;border-radius:999px;font-size:.9rem;font-weight:600;margin-bottom:1.75rem}
+.hero p{max-width:680px;margin:0 auto 2.25rem;font-size:1.05rem}
+.trust{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin-top:2rem;font-size:.85rem;opacity:.8}
+.bullet{width:6px;height:6px;background:var(--s);border-radius:50%}
+/* BENEFIT BAR */
+.benefits{background:#fff;border-radius:26px;padding:2rem 1rem;max-width:960px;margin:-6rem auto 5rem;display:flex;gap:1.5rem;justify-content:space-between;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.benefit{flex:1;text-align:center;font-size:1rem}
+.benefit .emoji{font-size:1.9rem;display:block;margin-bottom:.65rem}
+/* IMPACT */
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+.impact-card{background:#fff;border-radius:18px;padding:1.3rem;box-shadow:0 4px 18px rgba(0,0,0,.06);display:flex;gap:.75rem;align-items:flex-start;font-size:.95rem}
+.icon{font-size:1.4rem;line-height:1}
+.loss .icon{color:#ff4949}
+.gain .icon{color:#21a317}
+/* CARD GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.card{background:#fff;border-radius:18px;padding:1.4rem;box-shadow:0 4px 18px rgba(0,0,0,.06)}
+.card h3{color:var(--p);font-size:1.1rem;margin-bottom:.5rem}
+/* TIMELINE */
+.timeline{display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem}
+.timeline li{display:flex;gap:.75rem}
+.dot{width:14px;height:14px;background:var(--p);border-radius:50%;margin-top:.3rem}
+/* FAQ */
+details{background:#fff;border-radius:14px;margin-bottom:1rem;padding:1.1rem 1.2rem;box-shadow:0 4px 18px rgba(0,0,0,.05)}
+details summary{cursor:pointer;font-weight:600;color:var(--p)}
+details[open]{box-shadow:0 6px 20px rgba(0,0,0,.08)}
+details p{margin-top:.8rem;font-size:.95rem}
+footer{text-align:center;padding:3rem 1rem;font-size:.85rem;opacity:.75}
+@media(max-width:800px){.impact-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:540px){.impact-grid{grid-template-columns:1fr}.benefits{flex-direction:column;text-align:left}.hero{padding:5rem 1rem 8rem}}
+</style>
+</head>
+<body>
+<!-- HERO -->
+<header class="hero">
+<h1>Ahorra tiempo y dinero<br>con <span class="highlight">IA</span> en tu negocio</h1>
+<span class="badge">en 5&nbsp;días</span>
+<p>Curso en vivo y práctico para emprendedores latinos — incluye GPTs exclusivos y grabaciones.</p>
+<a href="#precio" class="btn">Quiero mi lugar</a>
+<div class="trust">
+<span><span class="bullet"></span>Testimonios verificados</span>
+<span><span class="bullet"></span>Plazas limitadas</span>
+<span><span class="bullet"></span>100&nbsp;% grabado</span>
+<span><span class="bullet"></span>GPTs exclusivos</span>
+</div>
+</header>
+<!-- BENEFIT BAR -->
+<section class="benefits section">
+<div class="benefit"><span class="emoji">💡</span><p>Conceptos clave</p></div>
+<div class="benefit"><span class="emoji">⚙️</span><p>Aplicaciones prácticas</p></div>
+<div class="benefit"><span class="emoji">🚀</span><p>Para todos los niveles</p></div>
+</section>
+<!-- IMPACTO -->
+<section class="section">
+<h2>¿Por qué automatizar ahora?</h2>
+<div class="impact-grid">
+<div class="impact-card gain"><span class="icon">✅</span><p>Libera 10&nbsp;h/semana para crecer.</p></div>
+<div class="impact-card gain"><span class="icon">✅</span><p>Reduce costos sin contratar más personal.</p></div>
+<div class="impact-card gain"><span class="icon">✅</span><p>Crea anuncios listos en un par de clics.</p></div>
+<div class="impact-card loss"><span class="icon">❌</span><p>Pasas horas en tareas manuales que podrías automatizar.</p></div>
+<div class="impact-card loss"><span class="icon">❌</span><p>Tus respuestas llegan tarde porque todo es manual.</p></div>
+<div class="impact-card loss"><span class="icon">❌</span><p>Pierdes ventas por no personalizar mensajes.</p></div>
+</div>
+</section>
+<!-- BENEFICIOS RÁPIDOS -->
+<section class="section">
+<h2>Beneficios rápidos</h2>
+<div class="grid">
+<div class="card"><h3>Ahorra 10&nbsp;h/semana</h3><p>Automatiza tareas repetitivas.</p></div>
+<div class="card"><h3>Responde en 60&nbsp;s</h3><p>Chatbots que cierran ventas&nbsp;24/7.</p></div>
+<div class="card"><h3>Duplica tu alcance</h3><p>Prompts que generan posts y anuncios.</p></div>
+<div class="card"><h3>Reduce costos</h3><p>Implementa IA económica.</p></div>
+<div class="card"><h3>Crea ofertas irresistibles</h3><p>Aprende prompts que venden.</p></div>
+<div class="card"><h3>Lanza tus GPTs</h3><p>Casos reales listos para usar.</p></div>
+</div>
+</section>
+<!-- PROGRAMA -->
+<section class="section">
+<h2>Programa: 5 días, 5 claves</h2>
+<ul class="grid" style="list-style:none;padding:0">
+<li class="card"><strong>Día 1:</strong><br>Fundamentos de IA y ChatGPT</li>
+<li class="card"><strong>Día 2:</strong><br>Prompts efectivos y trucos prácticos</li>
+<li class="card"><strong>Día 3:</strong><br>Aplicaciones reales en negocios</li>
+<li class="card"><strong>Día 4:</strong><br>Automatización y flujos con IA</li>
+<li class="card"><strong>Día 5:</strong><br>Mitiga riesgos y escala éticamente</li>
+</ul>
+</section>
+<!-- SNAPSHOT -->
+<section class="section">
+<h2>Snapshot del curso</h2>
+<ul class="timeline">
+<li><span class="dot"></span><p><strong>Duración:</strong> 5 días · 10&nbsp;h en vivo</p></li>
+<li><span class="dot"></span><p><strong>Turnos disponibles:</strong> Mañana · Tarde · Noche (adaptados para LatAm, USA y UE)</p></li>
+<li><span class="dot"></span><p><strong>Modalidad:</strong> Clases en vivo + grabaciones inmediatas</p></li>
+<li><span class="dot"></span><p><strong>Incluye:</strong> GPTs personalizados, comunidad privada, material descargable</p></li>
+<li><span class="dot"></span><p><strong>Requisito:</strong> Suscripción ChatGPT Plus (obligatorio)</p></li>
+</ul>
+<div class="section" style="text-align:center;padding-top:2rem">
+<a href="#precio" class="btn">Quiero aprender IA</a>
+</div>
+</section>
+<!-- BONOS -->
+<section class="section">
+<h2>Bonos exclusivos</h2>
+<div class="grid">
+<div class="card"><span class="emoji">📄</span> Plantillas premium de prompts</div>
+<div class="card"><span class="emoji">🤝</span> Comunidad privada</div>
+<div class="card"><span class="emoji">🎓</span> Certificado digital verificable</div>
+</div>
+</section>
+<!-- PRECIO -->
+<section class="section" id="precio">
+<h2>Precio e inscripción</h2>
+<div class="card" style="text-align:center;max-width:420px;margin:auto">
+<div style="font-size:2.2rem;color:var(--p);font-weight:700;margin-bottom:.4rem">$79 USD</div>
+<div style="margin-bottom:1.4rem">Acceso completo al curso, materiales y comunidad</div>
+<a href="#cta-final" class="btn">Inscribirme ahora</a>
+<div style="color:var(--s);margin-top:1.2rem;font-weight:600">Garantía 5 días</div>
+<small>Si el curso no es lo que esperabas, te devolvemos el dinero (menos comisiones)</small>
+</div>
+</section>
+<!-- FAQ -->
+<section class="section" id="faq">
+<h2>Preguntas frecuentes</h2>
+<details>
+<summary>¿Entregarán certificado?</summary>
+<p>Sí. Al completar las 10&nbsp;h recibirás un <strong>Certificado de Participación</strong> emitido por Impulsiva Escuela con código verificable en línea. No es título oficial ante el MEN.</p>
+</details>
+<details>
+<summary>¿Necesito experiencia previa en IA?</summary>
+<p>No. Empezamos desde cero y avanzamos rápidamente con ejemplos prácticos.</p>
+</details>
+<details>
+<summary>¿Qué pasa si no puedo asistir en vivo?</summary>
+<p>Tendrás acceso inmediato a las grabaciones y al grupo privado para resolver dudas.</p>
+</details>
+<details>
+<summary>¿El costo incluye actualizaciones futuras?</summary>
+<p>Recibirás actualizaciones del material del curso por 6 meses sin costo adicional.</p>
+</details>
+<details>
+<summary>¿La garantía realmente funciona?</summary>
+<p>Tienes 5 días hábiles para solicitar reembolso completo (menos comisiones bancarias) si el contenido no cumple tus expectativas.</p>
+</details>
+<details>
+<summary>¿Cómo pago?</summary>
+<p>Tarjeta de crédito/debito internacional o PayPal. Moneda local se convierte automáticamente.</p>
+</details>
+</section>
+<!-- CTA FINAL -->
+<section class="section" id="cta-final" style="text-align:center">
+<h2>¿Listo para transformar tu negocio con IA?</h2>
+<a href="#precio" class="btn" style="font-size:1.15rem;letter-spacing:.4px;margin-top:1.5rem">Reserva tu cupo hoy</a>
+<div style="margin-top:2rem;font-size:.95rem;opacity:.75">Cupos limitados · Soporte personalizado</div>
+</section>
+<!-- FOOTER -->
+<footer>© 2025 Impulsiva Escuela. Todos los derechos reservados.</footer>
+</body>
+</html>
